@@ -246,6 +246,12 @@ body {
   margin-bottom: 5px;
 }
 
+.contacts-li:hover {
+  color: plum;
+  fill: plum;
+  cursor: pointer;
+}
+
 .contacts-svg {
   margin-right: 15px;
   fill: indigo;
