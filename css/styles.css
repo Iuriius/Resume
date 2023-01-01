@@ -44,7 +44,7 @@ ul {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -70,7 +70,7 @@ ul {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -183,13 +183,33 @@ ul {
 | main content
 |============================
 */
+.wrapper1 {
+  margin-top: 20px;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: mediumpurple;
+  background-image: url("../images/svg/wave1.svg");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper1 {
+    height: 500px;
+    background-size: cover;
+  }
+}
+
 .photo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 320px;
   height: 320px;
-  margin-top: 30px;
   background: linear-gradient(145deg, #EDF7FF, #B7BFD0);
   border-radius: 100%;
   box-shadow: inset 9.91px 9.91px 11px #ABB2C2, inset -9.91px -9.91px 11px #F9FFFF;
@@ -210,27 +230,15 @@ ul {
 }
 
 .name-block {
+  padding: 3%;
   text-shadow: #ffffff 1px 1px 1px;
-}
 
-.wrapper1 {
-  margin-top: 20px;
-  height: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  color: mediumpurple;
-  background-image: url("../images/svg/wave1.svg");
-  background-size: cover;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-@media screen and (min-width: 320px) {
-  .wrapper1 {
-    margin-top: 0px;
-    height: 500px;
-  }
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .wrapper2 {
@@ -249,6 +257,7 @@ ul {
   color: rebeccapurple;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
+  border-radius: 10px;
   background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
   background-image: -moz-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
   background-image: -ms-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
