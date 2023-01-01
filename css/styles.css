@@ -12,6 +12,10 @@ body {
   background-color: #d3daed;
 }
 
+ul {
+  padding: 0;
+}
+
 .container {
   max-width: 1190px;
   padding-left: 0;
@@ -208,13 +212,20 @@ body {
   margin-top: 20px;
   height: 400px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   color: mediumpurple;
   background-image: url("../images/svg/wave1.svg");
   background-size: cover;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@media screen and (min-width: 320px) {
+  .wrapper1 {
+    margin-top: 0px;
+    height: 500px;
+  }
 }
 
 .wrapper2 {
@@ -228,6 +239,7 @@ body {
 
 .leftblock {
   width: 320px;
+  height: 200px;
   margin-right: 20px;
   padding: 20px;
   color: rebeccapurple;
@@ -238,7 +250,15 @@ body {
   background-image: -ms-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
 }
 
-.contacts {}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-title {
+  margin-bottom: 15px;
+}
 
 .contacts-ul {}
 
@@ -258,10 +278,41 @@ body {
 }
 
 .rightblock {
-  min-width: 320px;
-  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 765px;
+  height: 200px;
   padding: 20px;
   background-color: #f0f8ff;
   color: rebeccapurple;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+  background-image: -moz-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+}
+
+.education-title {
+  margin-bottom: 15px;
+}
+
+.education-ul {
+  display: flex;
+  gap: 100px;
+}
+
+.education-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-logo {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.education-text-row {
+  text-align: center;
+  font-size: larger;
 }
