@@ -27,6 +27,7 @@ ul {
 .page-header {
   -webkit-box-shadow: 10px 10px 20px #8c919e, -10px -10px 20px #ffffff;
   box-shadow: 10px 10px 20px #8c919e, -10px -10px 20px #ffffff;
+  margin-bottom: 20px;
 }
 
 .page-header .container {
@@ -184,9 +185,8 @@ ul {
 |============================
 */
 .wrapper1 {
-  margin-top: 20px;
-  height: 350px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -194,12 +194,13 @@ ul {
   background-image: url("../images/svg/wave1.svg");
   background-size: cover;
   border-radius: 10px;
+  margin-bottom: 20px;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .wrapper1 {
-    height: 500px;
+    height: 350px;
     background-size: cover;
   }
 }
@@ -208,6 +209,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
   width: 320px;
   height: 320px;
   background: linear-gradient(145deg, #EDF7FF, #B7BFD0);
@@ -232,27 +234,40 @@ ul {
 .name-block {
   padding: 3%;
   text-shadow: #ffffff 1px 1px 1px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .wrapper2 {
-  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper2 {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+
 .leftblock {
-  width: 320px;
-  height: 200px;
+  width: 300px;
   padding: 20px;
   color: rebeccapurple;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -261,6 +276,13 @@ ul {
   background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
   background-image: -moz-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
   background-image: -ms-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .leftblock {
+    width: 225px;
+    height: 200px;
+  }
 }
 
 .contacts {
@@ -272,8 +294,6 @@ ul {
 .contacts-title {
   margin-bottom: 15px;
 }
-
-.contacts-ul {}
 
 .contacts-li {
   margin-bottom: 5px;
@@ -292,11 +312,12 @@ ul {
 
 .rightblock {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  min-width: 765px;
-  height: 200px;
+  width: 300px;
   padding: 20px;
+  border-radius: 10px;
   background-color: #f0f8ff;
   color: rebeccapurple;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -304,6 +325,13 @@ ul {
   background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
   background-image: -moz-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
   background-image: -ms-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .rightblock {
+    width: 420px;
+    margin-bottom: 0;
+  }
 }
 
 .education-title {
@@ -315,9 +343,30 @@ ul {
   gap: 100px;
 }
 
+@media screen and (min-width: 320px) {
+  .education-ul {
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .education-ul {
+    gap: 3px;
+  }
+}
+
 .education-element {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 320px) {
+  .education-element {
+    flex-direction: row;
+    gap: 25px;
+  }
 }
 
 .education-logo {
@@ -325,7 +374,84 @@ ul {
   margin-bottom: 10px;
 }
 
+.education-logo-img {
+  height: 20px;
+}
+
 .education-text-row {
   text-align: center;
-  font-size: larger;
+  font-size: medium;
+}
+
+@media screen and (min-width: 768px) {
+  .education-text-row {
+    font-size: medium;
+  }
+}
+
+.third-block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  color: rebeccapurple;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+  background-image: -moz-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+  background-image: -ms-radial-gradient(50% 50%, ellipse cover, #f0f8ff 50%, #d3daed 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .third-block {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .third-block {
+    width: 385px;
+  }
+}
+
+.thirdblock-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .thirdblock-ul {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thirdblock-ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.thirdblock-title {
+  margin-bottom: 15px;
+}
+
+.thirdblock-li {
+  text-align: center;
+}
+
+.thirdblock-li:first-child:hover {
+  color: plum;
+}
+
+@media screen and (min-width: 1200px) {
+  .thirdblock-li {
+    margin-bottom: 23px;
+  }
 }
