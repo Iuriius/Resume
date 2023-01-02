@@ -513,6 +513,7 @@ ul {
 @media screen and (min-width: 768px) {
   .wrapper3 {
     width: 740px;
+    height: 550px;
   }
 }
 
@@ -557,4 +558,29 @@ ul {
 .projects-img {
   width: 300px;
   border-radius: 10px 10px 0px 0px;
+}
+
+.footer {
+  color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 75px;
+  background-image: url("../images/svg/footer.svg");
+  background-size: cover;
+  text-shadow: #ffffff 1px 1px 1px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.copyrights {
+  width: 250px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .copyrights {
+    width: 700px;
+  }
 }
