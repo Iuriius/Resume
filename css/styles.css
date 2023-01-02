@@ -233,6 +233,11 @@ ul {
   filter: opacity(85%);
   -webkit-box-shadow: 10px 10px 20px #8c919e, -10px -10px 20px #ffffff;
   box-shadow: 10px 10px 20px #8c919e, -10px -10px 20px #ffffff;
+  transition: transform 250ms ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
 }
 
 .portrait {
@@ -241,7 +246,8 @@ ul {
 }
 
 .name-block {
-  padding: 3%;
+  padding: 5%;
+  width: max-content;
   text-shadow: #ffffff 1px 1px 1px;
   border-radius: 50px 10px;
   margin-top: 10px;
@@ -251,8 +257,14 @@ ul {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  transition: transform 250ms ease;
+}
+
+.name-block:hover,
+.name-block:focus {
+  transform: scale(1.03);
 }
 
 .wrapper2 {
@@ -455,7 +467,8 @@ ul {
   text-align: center;
 }
 
-.thirdblock-li:first-child:hover {
+.thirdblock-li:first-child:hover,
+.thirdblock-li:first-child:focus {
   color: plum;
 }
 
@@ -521,11 +534,14 @@ ul {
   -webkit-backdrop-filter: blur(2px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 250ms ease-in-out;
+
 }
 
 .projects-li:hover,
 .projects-li:focus {
   color: plum;
+  transform: scale(1.05);
 }
 
 .projects-img {
