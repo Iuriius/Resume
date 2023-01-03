@@ -139,6 +139,10 @@ ul {
   box-shadow: inset 5.11px 5.11px 10px #BFC7D9, inset -5.11px -5.11px 10px #E5EFFF;
 }
 
+.menu-component-active {
+  font-weight: bold;
+}
+
 /**
 |============================
 | dropdown menu
@@ -403,6 +407,7 @@ ul {
   margin-bottom: 10px;
 }
 
+
 .education-logo-img {
   height: 20px;
 }
@@ -416,6 +421,10 @@ ul {
   .education-text-row {
     font-size: medium;
   }
+}
+
+.education-logo:hover~.education-text-row {
+  color: plum;
 }
 
 .topskills {
@@ -574,6 +583,12 @@ ul {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
+.email:hover,
+.email:focus {
+  color: indigo;
+  font-weight: bold;
+}
+
 .copyrights {
   width: 250px;
   text-align: center;
@@ -585,11 +600,29 @@ ul {
   }
 }
 
+
 /**
 |============================
 | portfolio
 |============================
 */
+.portfolio-container {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-container {
+    width: 1200px;
+  }
+}
+
 .heart {
   position: relative;
   width: 100px;
@@ -614,4 +647,85 @@ ul {
   left: 0;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
+}
+
+.portfolio-background {
+  background-image: -webkit-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
+  background-image: -moz-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
+  background-image: -ms-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.portfolio-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-component {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.portfolio-img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  transition: transform 250ms ease;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.025);
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-img {
+    width: 400px;
+  }
+}
+
+.portfolio-about {
+  color: rebeccapurple;
+  padding-top: 10px;
+  width: 300px;
+
+  transition: color 250ms ease;
+}
+
+.portfolio-about:hover,
+.portfolio-about:focus {
+  color: plum;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-about {
+    width: 555px;
+  }
+}
+
+.portfolio-name {
+
+  text-shadow: #ffffff 1px 1px 1px;
+}
+
+.portfolio-subname {
+  margin-bottom: 10px;
+}
+
+.portfolio-contribution {
+  color: MediumPurple;
+  text-shadow: #ffffff 1px 1px 1px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-contribution {
+    color: rebeccapurple;
+  }
 }
