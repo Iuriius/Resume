@@ -261,12 +261,13 @@ ul {
 }
 
 .name-block {
-  padding: 10px;
+  padding: 20px;
   width: max-content;
   text-shadow: #ffffff 1px 1px 1px;
   border-radius: 50px 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: smaller;
 
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(2px);
@@ -280,6 +281,13 @@ ul {
 .name-block:hover,
 .name-block:focus {
   transform: scale(1.03);
+}
+
+@media screen and (min-width: 768px) {
+  .name-block {
+    padding: 40px;
+    font-size: medium;
+  }
 }
 
 .wrapper2 {
@@ -609,6 +617,11 @@ ul {
 .portfolio-container {
   margin: 0 auto;
   width: 320px;
+
+  background-image: -webkit-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
+  background-image: -moz-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
+  background-image: -ms-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -623,6 +636,7 @@ ul {
   }
 }
 
+/* 
 .heart {
   position: relative;
   width: 100px;
@@ -647,14 +661,9 @@ ul {
   left: 0;
   transform: rotate(45deg);
   transform-origin: 100% 100%;
-}
+} */
 
-.portfolio-background {
-  background-image: -webkit-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
-  background-image: -moz-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
-  background-image: -ms-linear-gradient(-180deg, #ededed 75%, #e6e6fa 55%);
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
+.portfolio-background {}
 
 .portfolio-component {
   display: flex;
