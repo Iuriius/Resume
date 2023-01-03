@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Iurii Kyrychenko a front end developer based in Bila Tserkva. Resume and CV. Looking for a job. Web developer.">
+  <title>Iurii Kyrychenko - Front End Developer</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+
+  <!-- /**
+|============================
+| header
+|============================
+*/ -->
+  <header class="page-header">
+    <div class="container">
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+
+      <ul class="menu">
+        <li class="menu-component"><a href="./index.html" class="link">Main Page</a></li>
+        <li class="menu-component"><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li class="menu-component"><a href="./contacs.html" class="link">Contacts</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- /**
+|============================
+| main content
+|============================
+*/ -->
+  <main>
+    <div class="container">
+      <div class="heart"></div>
+    </div>
+  </main>
+  <!-- /**
+  |============================
+  | 
+  |============================
+  */ -->
+  <footer class="footer">
+    <div class="email">
+      <a href="mailto:iuriius@gmail.com?subject=Hello dear Iurii" title="send me email">Click here to send e-mail</a>
+    </div>
+    <div class="copyrights">
+      <p>Сopyright © 2023 Iurii Kyrychenko. Personal page. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- /**
+|============================
+| mobile menu
+|============================
+*/ -->
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li><a href="https://iuriius.github.io/resume/" class="link">IURII KYRYCHENKO<br>Front End Developer</a></li>
+      <li><a href="" class="link">My portfolio</a></li>
+      <li><a href="" class="link">Contacts</a></li>
+    </ul>
+  </div>
+
+  <!-- /**
+|============================
+| scripts
+|============================
+*/ -->
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
