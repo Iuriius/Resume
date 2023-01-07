@@ -786,18 +786,28 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 65vh;
   background-image: url("../images/svg/wave2.svg");
   background-size: cover;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper-contacts {}
+  .wrapper-contacts {
+    height: 75vh;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .wrapper-contacts {}
+  .wrapper-contacts {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper-contacts {
+    height: 73vh;
+  }
 }
 
 .contacts-title {
@@ -815,12 +825,19 @@ ul {
 .cont-ul {
   color: rebeccapurple;
   text-shadow: #ffffff 1px 1px 1px;
-  line-height: 3.5rem;
+  line-height: 1.5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .cont-ul {
-    line-height: 1.5rem;
+    line-height: 2.5rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-ul {
+    line-height: 3.5rem;
     justify-content: center;
   }
 }
