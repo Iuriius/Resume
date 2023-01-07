@@ -785,25 +785,44 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  height: calc(100vh - 195px);
+  justify-content: center;
+  height: 70vh;
   background-image: url("../images/svg/wave2.svg");
   background-size: cover;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper-contacts {}
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-contacts {}
 }
 
 .contacts-title {
   font-size: larger;
   color: rebeccapurple;
   text-shadow: #ffffff 1px 1px 1px;
+}
 
+@media screen and (min-width: 320px) {
+  .contacts-title {
+    margin-bottom: 5px;
+  }
 }
 
 .cont-ul {
   color: rebeccapurple;
   text-shadow: #ffffff 1px 1px 1px;
-  line-height: 2.5em;
+  line-height: 3.5rem;
+}
 
+@media screen and (max-width: 767px) {
+  .cont-ul {
+    line-height: 1.5rem;
+    justify-content: center;
+  }
 }
 
 .cont-svg {
